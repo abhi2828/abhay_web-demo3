@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="faviconLink1" rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link id="faviconLink2" rel="icon" type="image/ico" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <title>Flykash</title>
+    <style></style>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container background_form">
+
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="login-button-container clearfix">
+                <div class="parent_div">
+                    <div class="col-xs-6 sign-in">
+                        <button class="btn button1 active" style="display: block;background: red;">
+                    Flight       
+                  </button>
+                        <button class="btn button2" style="display: block;background: green;">
+                    Hotel        
+                  </button>
+                        <button class="btn button3" style="display: block;background: green;">
+                    holidays        
+                  </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+            <div class="row item1" style="display: block;">
+                aaaaaaaaa
+            </div>
+
+            <div class="row item2" style="display: none;">
+                bbbbbbbb
+            </div>
+            <div class="row item3" style="display: none;">
+                cccccccccc
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $('.item2').hide();
+    $('.item3').hide();
+
+    $('.button1').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active').css('background', 'red');
+        $('.button2').removeClass('active').css('background', 'green');
+        $('.button3').removeClass('active').css('background', 'green');
+        $('.item1').show();
+        $('.item2').hide();
+        $('.item3').hide();
+    });
+
+    $('.button2').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active').css('background', 'red');
+        $('.button3').removeClass('active').css('background', 'green');
+        $('.button1').removeClass('active').css('background', 'green');
+        $('.item2').show();
+        $('.item1').hide();
+        $('.item3').hide();
+    });
+    $('.button3').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active').css('background', 'red');
+        $('.button2').removeClass('active').css('background', 'green');
+        $('.button1').removeClass('active').css('background', 'green');
+        $('.item3').show();
+        $('.item1').hide();
+        $('.item2').hide();
+    });
+</script>
+
+</html>
